@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background: #0f141c;
+  }
+
+  header {
+    padding-top: 16px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-weight: 700;
+    font-size: 48px;
+	background: linear-gradient(45deg, #0063a6 35%, #b2d0ff 70%);
+	background-clip: text;
+	color: transparent;
+  }
+
+  header p {
+    color: white;
+  }
+
+  main {
+    padding: 16px 32px ;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .container h2 {
+    padding-bottom: 8px;
+    color: #6baffe;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px;
+  }
+
+  .card {
+    border: #323438 solid 1px;
+    color: #ffffff;
+    background-color: #252931;
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .card p {
+    font-size: 14px;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    align-items: center;
+  }
+
+  .card-detail h4 {
+    font-size: 14px;
+  }
+
+  .card-detail button {
+    background: transparent;
+    color: #f8f8f8;
+    border: #55585f solid 1px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 2px 12px;
+  }
+
+  .card-detail button:hover {
+    background: #55585f;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+  }
+
+  @media (min-width: 1024px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 12px;
+      }
+  }
+
+  
+
